@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-const Todo = () => {
+const Todo = ({text, completed}) => {
     return (
         <div className='todo-container'>
             <li className='todo-item'>
-                Hey
+                { text }
             </li>
             <button className='complete-btn'>
                 <i className='fas fa-check'></i>
